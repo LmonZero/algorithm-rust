@@ -1,6 +1,9 @@
-use algorithm::util;
-
 fn main() {
-    util::util_test::util_test_println(20, 30);
-    println!("Hello, world!");
+    let c: char = '9';
+    let mut t: usize = 0;
+    match c {
+        '0'..='9' => t = 10 * t + c as usize - 48,
+        _ => {}
+    }
+    println!("{},{:#X}", t, 48);
 }
